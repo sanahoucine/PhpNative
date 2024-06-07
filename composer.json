@@ -1,0 +1,17 @@
+{
+    "name": "sanahoucine/php-native",
+    "description": "Hello , this is a short and simple php project without a framework!",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sanahoucine\\PhpNative\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "sana.houcine",
+            "email": "loujainehoucine@gmail.com"
+        }
+    ],
+    "require": {}
+}
