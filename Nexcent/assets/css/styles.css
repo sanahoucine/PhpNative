@@ -34,7 +34,7 @@ header {
     font-weight: 600;
     box-shadow: inset 0px -5px 0px rgba(255, 255, 255, 0.158);
     transition: all 0.4s ease, transform 0.2s ease;
-    margin-top: 2%;
+   
 }
 .nav-link:hover {
       transform: translateY(-5px);
@@ -42,19 +42,28 @@ header {
       color:white ;
     }
 
-
- 
   .rightMenu{
     justify-content: flex-end;
   }
-  .register{
+ 
+/* Button Styles */
+.btn.register {
+    align-items: center;
     background-color: #4CAF4F;
     color:white;
-    width:  Hug (133.25px);
+    width:250px;
+    height: 36.49px;
     margin-left: 10%;
     border-radius: 2.78px;
 
   }
+
+.btn.register svg {
+  
+    transition: fill 0.3s ease; /* Smooth transition for the color change */
+}
+
+
   /* Logo Styles */
   .logo {
     width: 107.54px; /* Hug width */
