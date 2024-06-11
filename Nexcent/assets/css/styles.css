@@ -10,20 +10,14 @@ body {
 
 body {
   position: relative; 
-}
-
-/* Apply box shadow to body */
-body {
-  box-shadow: -24px -28px 140px 0px rgba(0, 0, 0, 0.1); /* Set box shadow with specified values */
+  box-shadow: -24px -28px 140px 0px rgba(0, 0, 0, 0.1); 
 }
 
 /* Header Section */
 header {
     position:fixed;
     width: 100%;
-
     padding: 16px 144px 16px 144px;
-
     box-shadow: 0px 2.78px 5.57px rgba(171, 190, 209, 0.166); /* Box shadow */
   }
   .nav-link{
@@ -71,3 +65,157 @@ header {
     
   }
   
+
+  /* this is style of section home */
+  #home{ 
+    position:relative;
+    top:90px;
+    background-color: #F5F7FA;
+    height: 890px;
+  }
+
+  /* the hero div */
+  .carousel-item {
+    animation: fade 1.5s ease-in-out;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .carousel-indicators {
+    position: absolute;
+    top: 370px;
+    left: 35%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+  }
+  
+  .carousel-indicators button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    background-color: #4caf4f83 !important;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+  
+  .carousel-indicators button.active {
+    background-color: #4CAF4F !important;
+    opacity: 1;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .carousel-indicators {
+      bottom: 15px;
+    }
+  
+    .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-indicators {
+      bottom: 20px;
+    }
+  
+    .carousel-indicators button {
+      width: 8px;
+      height: 8px;
+    }
+  }
+  
+  .text1Home{
+    font-family: Inter; 
+    font-size: 44.55px; 
+    font-weight: 600; 
+    line-height: 52.9px; 
+    text-align: left; 
+    color:#4D4D4D;
+  }
+ .text2Home{
+    font-family: Inter; 
+    font-size:  44.55px; 
+    font-weight: 600; 
+    line-height: 16.71px; 
+    text-align: left;
+    color:#4CAF4F;
+  }
+  .text3Home{
+    font-family: Inter; 
+    font-size: 11.14px; 
+    font-weight: 400; 
+    line-height: 52.9px; 
+    text-align: left;
+    color: #717171;
+  }
+  .btn.home {
+    background-color: #4CAF4F;
+    color:white;
+    width:90px;
+    height: 36.49px;
+    border-radius: 2.78px;
+
+  }
+
+  /* style of clients in home section */
+.clients{
+  padding: 16px 144px 16px 144px;
+  height: 270px;
+  background-color:#FFFFFF;
+  
+}
+.textClients h2 ,.textClients h3{
+  font-family: Inter; 
+    font-size: 36px; 
+    font-weight: 600; 
+    line-height: 44px; 
+    text-align: Center;
+    color: #717171;
+}
+.text1Clients{
+  font-family: Inter; 
+  font-size: 11.14px; 
+  font-weight: 400; 
+  line-height: 52.9px; 
+  text-align: center;
+  color: #717171;
+  
+  
+}
+.logoClients img{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+ /* style of Community in home section */
+ .community{
+  padding: 36px 144px 36px 144px;
+  height: 350px;
+  background-color:#FFFFFF;
+  
+ 
+}
+
+.textMember{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #717171;
+
+}
