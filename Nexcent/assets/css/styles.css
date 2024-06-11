@@ -1,0 +1,64 @@
+
+html,
+body {
+  width: 100%; 
+  height: 3046px; 
+  margin: 0; 
+  padding: 0; 
+  background: #FFFFFF; 
+}
+
+body {
+  position: relative; 
+}
+
+/* Apply box shadow to body */
+body {
+  box-shadow: -24px -28px 140px 0px rgba(0, 0, 0, 0.1); /* Set box shadow with specified values */
+}
+
+/* Header Section */
+header {
+    position:fixed;
+    width: 100%;
+
+    padding: 16px 144px 16px 144px;
+
+    box-shadow: 0px 2.78px 5.57px rgba(171, 190, 209, 0.166); /* Box shadow */
+  }
+  .nav-link{
+    color:#4D4D4D;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-left: 20px;
+    font-weight: 600;
+    box-shadow: inset 0px -5px 0px rgba(255, 255, 255, 0.158);
+    transition: all 0.4s ease, transform 0.2s ease;
+    margin-top: 2%;
+}
+.nav-link:hover {
+      transform: translateY(-5px);
+      box-shadow: inset 0px -50px 5px  #4CAF4F; 
+      color:white ;
+    }
+
+
+ 
+  .rightMenu{
+    justify-content: flex-end;
+  }
+  .register{
+    background-color: #4CAF4F;
+    color:white;
+    width:  Hug (133.25px);
+    margin-left: 10%;
+    border-radius: 2.78px;
+
+  }
+  /* Logo Styles */
+  .logo {
+    width: 107.54px; /* Hug width */
+    height: 16.71px; /* Hug height */
+    
+  }
+  
