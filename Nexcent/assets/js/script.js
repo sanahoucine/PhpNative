@@ -3,11 +3,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const homeSection = document.getElementById('home');
   
     navbarToggler.addEventListener('click', function() {
-        const currentTop = parseInt(homeSection.style.top || '90px');
-        if (currentTop === 90) {
+        const currentTop = parseInt(homeSection.style.top || '95px');
+        if (currentTop === 95) {
             homeSection.style.top = `calc(200px + var(--navbar-height))`;
         } else {
-            homeSection.style.top = '90px';
+            homeSection.style.top = '95px';
         }
     });
   

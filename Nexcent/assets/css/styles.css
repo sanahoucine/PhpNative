@@ -69,7 +69,7 @@ header {
   /* this is style of section home */
   #home{ 
     position:relative;
-    top:90px;
+    top:95px;
     background-color: #F5F7FA;
     height: 890px;
   }
@@ -116,6 +116,7 @@ header {
   /* Responsive styling */
   @media (max-width: 768px) {
     .carousel-indicators {
+      top: 900px;
       bottom: 15px;
     }
   
@@ -133,6 +134,9 @@ header {
     .carousel-indicators button {
       width: 8px;
       height: 8px;
+    }
+    .clients{
+      height: 610px !important;
     }
   }
   
