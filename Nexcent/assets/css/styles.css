@@ -17,8 +17,10 @@ body {
 header {
     position:fixed;
     width: 100%;
+    background-color:#FFFFFF;
     padding: 16px 144px 16px 144px;
     box-shadow: 0px 2.78px 5.57px rgba(171, 190, 209, 0.166); /* Box shadow */
+    z-index: 1000; /* Ensure header stays on top */
   }
   .nav-link{
     color:#4D4D4D;
@@ -42,26 +44,28 @@ header {
  
 /* Button Styles */
 .btn.register {
-    align-items: center;
-    background-color: #4CAF4F;
-    color:white;
-    width:250px;
-    height: 36.49px;
-    margin-left: 10%;
-    border-radius: 2.78px;
-
-  }
-
-.btn.register svg {
-  
-    transition: fill 0.3s ease; /* Smooth transition for the color change */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  background-color: #4CAF4F;
+  color: white;
+  width: 250px;
+  height: 36.49px;
+  margin-left: 10%;
+  border-radius: 2.78px;
+  padding: 0 10px; 
+  gap: 8px; 
 }
 
+.btn.register svg {
+  transition: fill 0.3s ease; 
+  margin-left: 8px; 
+}
 
   /* Logo Styles */
   .logo {
-    width: 107.54px; /* Hug width */
-    height: 16.71px; /* Hug height */
+    width: 107.54px;
+    height: 16.71px; 
     
   }
   
@@ -69,16 +73,29 @@ header {
   /* this is style of section home */
   #home{ 
     position:relative;
-    top:95px;
+    top: 0; 
+    padding-top: 105px; /* Add padding to prevent overlap */
     background-color: #F5F7FA;
     height: 890px;
   }
+  :root {
+    --navbar-height: 0px; /* Initialize custom property */
+}
 
+header {
+    --navbar-height: 105px; 
+}
+
+#home {
+  padding-top: calc(var(--navbar-height)); 
+}
   /* the hero div */
   .carousel-item {
     animation: fade 1.5s ease-in-out;
   }
-  
+  .carimg{
+    padding-left:5%;
+  }
   @keyframes fade {
     0% {
       opacity: 0;
@@ -114,9 +131,9 @@ header {
   }
   
   /* Responsive styling */
-  @media (max-width: 768px) {
+  @media (max-width: 860px) {
     .carousel-indicators {
-      top: 900px;
+      top:550px;
       bottom: 15px;
     }
   
@@ -124,11 +141,30 @@ header {
       width: 10px;
       height: 10px;
     }
+    .btn.register {
+      width: auto; /* Make width responsive */
+      margin-left: 0; /* Reset margin */
+      padding: 0 15px; /* Add padding for small screens */
+  }
+  .order-md-1 {
+    order: 2 !important;
+  }
+  .order-md-2 {
+    order: 1 !important;
+  }
+  .col-md-6 {
+    width: auto !important; 
+
+  }
+  #unlock{
+    padding-top: 1010px !important;
+  }
   }
   
   @media (max-width: 576px) {
     .carousel-indicators {
       bottom: 20px;
+      top: 809px;
     }
   
     .carousel-indicators button {
@@ -138,8 +174,38 @@ header {
     .clients{
       height: 610px !important;
     }
+    #unlock{
+      padding-top: 1850px !important;
+    }
+    .btn.register {
+      width: 210px;
   }
+
+  }
+  @media (max-width: 399px) {
+    .carousel-indicators {
+      bottom: 20px;
+      top: 880px;
+    }
+  }
+  @media (max-width: 350px) {
+    .carousel-indicators {
+      bottom: 20px;
+      top: 1080px;
+    }
   
+    .carousel-indicators button {
+      width: 8px;
+      height: 8px;
+    }
+    .clients{
+      height: 810px !important;
+    }
+    .btn.register {
+      width: 200px;
+  }
+
+  }
   .text1Home{
     font-family: Inter; 
     font-size: 44.55px; 
@@ -221,5 +287,31 @@ header {
   font-weight: 400;
 
   color: #717171;
+
+}
+
+
+/* style of unlock section */
+
+#unlock{
+  position: relative;
+    top: 0;
+    padding-top: 505px;
+  height: 450px;
+}
+.text3unlock{
+  font-family: Inter; 
+  font-size: 11.14px; 
+  font-weight: 400; 
+  text-align: left;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  color: #717171;
+}
+.btn.unlock {
+  background-color: #4CAF4F;
+  color:white;
+  height: 36.49px;
+  border-radius: 2.78px;
 
 }
