@@ -19,3 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const navbarHeight = document.querySelector('header').offsetHeight;
     document.documentElement.style.setProperty('--navbar-height', `${navbarHeight}px`);
 });
+document.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach(element => {
+        if (element.getBoundingClientRect().top < window.innerHeight) {
+            element.classList.add('visible');
+        }
+    });
+});

@@ -1,6 +1,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   width: 100%; 
   height: 3046px; 
   margin: 0; 
@@ -73,13 +74,14 @@ header {
   /* this is style of section home */
   #home{ 
     position:relative;
-    top: 0; 
-    padding-top: 105px; /* Add padding to prevent overlap */
-    background-color: #F5F7FA;
-    height: 890px;
+    top: 0;  
+    height: 1245px;
   }
   :root {
     --navbar-height: 0px; /* Initialize custom property */
+}
+.hero{
+  background-color: #F5F7FA;
 }
 
 header {
@@ -146,20 +148,18 @@ header {
       margin-left: 0; /* Reset margin */
       padding: 0 15px; /* Add padding for small screens */
   }
-  .order-md-1 {
-    order: 2 !important;
-  }
-  .order-md-2 {
-    order: 1 !important;
-  }
-  .col-md-6 {
-    width: auto !important; 
+      .order-md-1 {
+        order: 2 !important;
+      }
+      .order-md-2 {
+        order: 1 !important;
+      }
+      .col-md-6 {
+        width: auto !important; 
 
-  }
-  #unlock{
-    padding-top: 1010px !important;
-  }
-  }
+      }
+     
+      }
   
   @media (max-width: 576px) {
     .carousel-indicators {
@@ -174,9 +174,7 @@ header {
     .clients{
       height: 610px !important;
     }
-    #unlock{
-      padding-top: 1850px !important;
-    }
+   
     .btn.register {
       width: 210px;
   }
@@ -290,28 +288,333 @@ header {
 
 }
 
-
 /* style of unlock section */
 
-#unlock{
+
+@media (max-width: 1110px) {
+  #home {
+    height: 1380px !important;
+  }
+  #unlock {
+    height: 546px !important;
+    }
+}
+
+@media (max-width: 860px) {
+  #home {
+    height: 1780px !important;
+  }
+  #unlock {
+  height: 746px !important;
+  }
+}
+
+
+@media (max-width: 690px) {
+  #home {
+    height: 1980px !important;
+  }
+  #unlock {
+    height: 946px !important;
+    }
+}
+
+@media (max-width: 590px) {
+  #home {
+    height: 2380px !important;
+  }
+}
+
+@media (max-width: 510px) {
+  #home {
+    height: 2780px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  #home {
+    height: 3080px !important;
+  }
+}
+
+@media (max-width: 399px) {
+  #home {
+    height: 3580px !important;
+  }
+}
+#unlock {
   position: relative;
-    top: 0;
-    padding-top: 505px;
+  top: 0;
+
   height: 450px;
 }
-.text3unlock{
-  font-family: Inter; 
-  font-size: 11.14px; 
-  font-weight: 400; 
-  text-align: left;
+
+.text3unlock {
+  font-family: Inter;
+  font-size: 11.14px;
+  font-weight: 400;
   margin-bottom: 3%;
   margin-top: 3%;
   color: #717171;
 }
+
 .btn.unlock {
   background-color: #4CAF4F;
-  color:white;
+  color: white;
   height: 36.49px;
   border-radius: 2.78px;
+}
 
+
+/* section achivements */
+
+#achivements{
+  position: relative;
+  top: 0;
+
+
+}
+.text1achiv{
+  font-family: Inter; 
+  font-size: 36px; 
+  font-weight: 600; 
+  line-height: 44px; 
+  color:#4D4D4D;
+}
+.text2achiv{
+  font-family: Inter; 
+  font-size: 36px; 
+  font-weight: 600; 
+  line-height: 44px;  
+  color:#4CAF4F;
+}
+.text3achiv{
+  font-family: Inter; 
+  font-size: 15px; 
+  font-weight: 400; 
+  line-height: 12px; 
+  text-align: left;
+  color: #717171;
+}
+.text4achiv{
+  font-family: Inter; 
+  font-size: 28px; 
+  font-weight: 700; 
+  line-height: 36px; 
+  color:#4D4D4D;
+}
+
+
+/* section Calendar */
+
+#calendar{
+  position: relative;
+  top: 0;
+
+  background-color:#FFFFFF;
+}
+/* section Customer */
+
+#Customer{
+  position: relative;
+  top: 0;
+
+  background-color:#F5F7FA;
+}
+.text1customer{
+  font-family: Inter; 
+  font-size: 16px; 
+  font-weight: 500; 
+  line-height: 24px; 
+  text-align: left;
+  color: #717171;
+}
+.text2customer{
+  font-family: Inter; 
+  font-size: 20px; 
+  font-weight: 600; 
+  line-height: 26px; 
+  text-align: left;
+  color: #4CAF4F;
+}
+.text3customer{
+  font-family: Inter; 
+  font-size: 16px; 
+  font-weight: 400; 
+  line-height: 24px; 
+  text-align: left;
+  color: #89939E;
+}
+
+
+.btn.register-now {
+  background-color: transparent;
+  color: #4CAF4F;
+  border: none;
+  padding: 0;
+  font-weight: 600;
+}
+
+.btn.register-now svg {
+  fill: #4CAF4F;
+  margin-left: 8px;
+}
+
+.btn.register-now:hover {
+  color: #388E3C;
+}
+
+.btn.register-now:hover svg {
+  fill: #388E3C;
+}
+#commupdate{
+  position: relative;
+  top: 0;
+  background-color:#FFFFFF;
+
+}
+
+.textcommupdate{
+  font-family: Inter; 
+  font-size: 36px; 
+  font-weight: 600; 
+  line-height: 44px; 
+  text-align: center;
+  color: #4D4D4D;
+}
+.text1commupdate{
+  
+  font-family: Inter; 
+  font-size: 16px; 
+  font-weight: 400; 
+  line-height: 24px; 
+  text-align: center;
+  color: #717171;
+}
+.text2commupdate h4 {
+  font-family: Inter; 
+    font-size: 20px; 
+    font-weight: 600; 
+    line-height: 28px; 
+    text-align: Center;
+    color: #717171;
+}
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-update {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 317px;
+  padding: 16px;
+  height: 176px;
+  box-shadow: 0px 8px 16px 0px #ABBED166;
+  border-radius: 8px;
+  background-color: #F5F7FA;
+  border: none;
+}
+#footer{
+  position: relative;
+  top: 0;
+  background-color:#F5F7FA;
+ 
+}
+.text2footer h1{
+  font-family: Inter;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 76px;
+  text-align: center;
+  color: #263238;
+}
+
+.btn.demo-now {
+  background-color: #4CAF4F;
+  color: white;
+  height: 36.49px;
+  border-radius: 2.78px;
+  border: none;
+  padding: 0 16px;
+}
+
+.btn.demo-now svg {
+  fill: white;
+  margin-left: 8px;
+}
+
+.btn.demo-now:hover {
+  color: white;
+}
+
+.btn.demo-now:hover svg {
+  fill: white;
+}
+
+#footer {
+  text-align: center;
+  padding: 20px;
+}
+
+#footer .btn {
+  display: inline-flex;
+  align-items: center;
+}
+ #big{
+  position: relative;
+  top: 0;
+  background-color:#263238;
+
+}
+.Copyright{
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  align-items: left;
+  color: #F5F7FA;
+}
+.d-flex {
+  display: flex !important;
+  justify-content: space-evenly;
+}
+.input-container {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+}
+
+.input-container input {
+  padding-left: 30px; /* Adjust this value to make space for the icon */
+  background-color: #808080; /* Gray background color */
+  color: white; /* Text color */
+  border: none; /* Remove border if desired */
+  border-radius: 4px; /* Optional: Rounded corners */
+  height: 36px; /* Adjust the height if needed */
+}
+
+.input-container input::placeholder {
+  color: white; /* Placeholder text color */
+}
+
+.input-container svg {
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* So the icon does not block input field events */
+  fill: white; /* SVG color */
+}
+.text3cust {
+  font-family: Inter; 
+  font-size: 20px; 
+  font-weight: 600; 
+  line-height: 26px; 
+  text-align: left;
+  color: white;
 }
